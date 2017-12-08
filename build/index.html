@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index</title>
+  <link href="statics/css/index.css" rel="stylesheet"></head>
+  <body class="container">
+    <h1>我是主页测试网页</h1>
+    <form class="form-group" action="http://localhost:3000/add">
+      <div>
+        <label for="name"></label>
+        <input class="form-control" type="text" id="name" placeholder="name" name="name">
+      </div>
+      <div>
+        <label for="price"></label>
+        <input class="form-control" type="text" id="price" placeholder="price" name="price">
+      </div>
+      <div>
+        <label for="price_unit"></label>
+        <input class="form-control" type="text" id="price_unit" placeholder="price_unit" value="HK" name="price_unit">
+      </div>
+      <button class="btn btn-default" type="submit">提交</button>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <td>商品名称</td>
+          <td>商品价格</td>
+          <td>商品单位</td>
+        </tr>
+      </thead>
+      <tbody id="dataWrap">
+        <tr>
+          <td>测试数据</td>
+          <td>测试数据</td>
+          <td>测试数据</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-default" id="getData" type="button">刷新数据</button>
+  <script type="text/javascript" src="statics/js/index.js"></script></body>
+</html>

@@ -1,0 +1,16 @@
+extends ../../layout/page
+block main
+    h1 产品总列表页面
+    table.table
+        thead
+            tr
+                td 商品名称
+                td 商品价格
+                td 商品单位
+        tbody#dataWrap
+            each item in resData
+                tr
+                    td=item.name
+                    td=item.price
+                    td=item.price_unit
+    button.btn.btn-default#getData(type='button') 刷新数据

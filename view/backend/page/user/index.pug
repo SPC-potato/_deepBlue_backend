@@ -1,0 +1,13 @@
+extends ../../layout/page
+block main
+    -
+        var formList = [
+            {id:'name', type:'text'},
+            {id:'password', type:'password'}
+        ]
+    form(action='http://localhost:3000/admin/user' method='get').form-group
+        each item in formList
+            div
+                label(for=item.id)
+                input.form-control(type=item.type id=item.id placeholder=item.id value=item.value name=item.id)
+        button.btn.btn-default(type='submit') 登陆
