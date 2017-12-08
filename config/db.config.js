@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 /////////////华丽的分隔符//////////////////
 
-const dbHost = 'mongodb://localhost/deepblue';
+const dbHost = 'mongodb://127.0.0.1:27017/deepblue';
 
 
 

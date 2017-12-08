@@ -6,7 +6,7 @@ block main
         {id:'price', type:'text'},
         {id:'price_unit', type:'text', value: 'HK'}
         ]
-    form(action='http://localhost:3000/admin/product/add').form-group
+    form(action='/admin/product/add').form-group
         each item in formList
             div
                 label(for=item.id)
@@ -27,7 +27,7 @@ block main
                     td=item.price
                     td=item.price_unit
                     td
-                        form(action='http://localhost:3000/admin/product/del' method='get' target="_parent")
+                        form(action='/admin/product/del' method='get' target="_parent")
                             input(type='hidden' name='name' value=item.name)
                             button.btn.btn-default(type='submit') 删除
                             //button.btn.btn-default 修改
